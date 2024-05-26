@@ -31,8 +31,7 @@ App.post("/payment/create", async (req, res) => {
   } catch (error) {}
 });
 
-
 App.listen(2024, (err) => {
-    if (err) throw err
-    console.log("Server Running and Listening on https://localhost:2024");
-})
+  if (err) throw err;
+  console.log("Server Running and Listening on https://localhost:2024");
+});
