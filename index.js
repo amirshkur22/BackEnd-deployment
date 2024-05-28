@@ -22,7 +22,7 @@ App.post("/payment/create", async (req, res) => {
       });
       // console.log(paymentIntent.amount);
       //The client_secret is used on the client side to complete the payment.
-      res.status(201).json({ client_secret: paymentIntent.client_secret });
+      res.status(201).json({ clientSecret: paymentIntent.client_secret });
     } else {
       res.status(403).json({
         message: "total must be greater than 0",
